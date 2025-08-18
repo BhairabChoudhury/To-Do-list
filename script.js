@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
             completed: false
         };
 
-        tasks.push(newTask);
-        saveTasks();
-        renderTask(newTask);
-        todoInput.value = "";
+        tasks.push(newTask);// push in the task array  
+        saveTasks();// save local storage 
+        renderTask(newTask);// show  the task  instance in the web page 
+        todoInput.value = "";// refresh  input buttton  
     });
 
     // Render task in UI
@@ -83,3 +83,4 @@ We don’t need to inspect e.target or prevent anything — we just remove the t
 
 load is like finishing the entire house, including all the landscaping, paintings, and appliances. Everything is ready, and the house is fully "complete."
 */
+
